@@ -1,0 +1,95 @@
+body {
+    margin: 0 auto;
+    padding: 3em;
+    text-align: center;
+  }
+
+  .hw7_1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    position: sticky;
+    top: 1em;
+    margin-left: 2em;
+  }
+  
+  .clock {
+    display: inline;
+    font-weight: bold;
+    font-size: 2em;
+    border: .1em solid rgb(192, 156, 221);
+    border-radius: 2em;
+    padding: .5em;
+    color: blueviolet;
+    background-color: #D4CFFF;
+  }
+  
+  .hours {
+    color: #575183;
+  }
+  
+  .min {
+    color: #AAA5CC;
+  }
+  
+  .sec {
+    color: #9182FF;
+  }
+  
+  .svet {
+    order: 1;
+    width: 3em;
+    padding: .5em;
+    border: .1em solid #5183AD;
+    background-color: #8FC8FA;
+    border-radius: 1.5em;
+  }
+  
+  .circle {
+    width: 2.5em;
+    height: 2.5em;
+    border: .1em solid #5183AD;
+    border-radius: 50%;
+    margin: .5em auto;
+    filter: brightness(40%);
+  }
+  
+  .red {
+    background-color: #FF0B00;
+  }
+  
+  .yellow{
+    background-color: #FFFD4E;
+  }
+  
+  .green{
+    background-color: #08C200;
+  }
+  
+  .activ {
+    filter: brightness(100%);
+  }
+
+  .nYear {
+    display: inline;
+    font-weight: bold;
+    font-size: 2em;
+    border: .1em solid rgb(192, 156, 221);
+    border-radius: 1em;
+    padding: .5em;
+    color: blueviolet;
+    background-color: white;
+  }
+
+  .nDay {
+    color: #575183;
+  }
+  
+  .nHours {
+    color: #AAA5CC;
+  }
+  
+  .nMin {
+    color: #9182FF;
+  }
