@@ -1,0 +1,84 @@
+body {
+  margin: 10px;
+  padding: 0;
+
+  text-align: center;
+}
+
+
+.card {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 10em;
+  height: 10em;
+  margin: 1em;
+  padding: 1em;
+  background-color: rgb(24, 192, 52);
+}
+
+.prize {
+  width: 100%;
+  margin: auto auto;
+  padding: 0;
+  visibility: hidden;
+}
+
+.prize-visible {
+  visibility: visible;
+}
+
+table {
+  margin-bottom: 5em;
+}
+
+.hide {
+  display: none;
+}
+
+
+.table_sort table {
+  border-collapse: collapse;
+}
+
+.table_sort th {
+  color: #ffebcd;
+  background: #008b8b;
+  cursor: pointer;
+}
+
+.table_sort td,
+.table_sort th {
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  border: 2px solid #846868;
+}
+
+.table_sort td:last-child,
+.table_sort th:last-child {
+  width: 900px;
+}
+
+.table_sort tbody tr:nth-child(even) {
+  background: #e3e3e3;
+}
+
+th.sorted[data-order="1"],
+th.sorted[data-order="-1"] {
+  position: relative;
+}
+
+th.sorted[data-order="1"]::after,
+th.sorted[data-order="-1"]::after {
+  right: 8px;
+  position: absolute;
+}
+
+th.sorted[data-order="-1"]::after {
+content: "▼"
+}
+
+th.sorted[data-order="1"]::after {
+content: "▲"
+}
+

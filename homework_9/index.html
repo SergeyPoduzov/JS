@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/arrUtils.js"></script>
+    <script src="https://cdn.plot.ly/plotly-1.2.0.min.js"></script>
+    <link rel="shortcut icon" type="image/png" href="lib/jasmine-3.5.0/jasmine_favicon.png">
+    <link rel="stylesheet" href="lib/jasmine-3.5.0/jasmine.css">  
+</head>
+
+<body>
+    <div id="placeholder" style="height:480px; width: 800px;"></div>
+
+    <div id="task_4">
+        <p>Осталось попыток: <span class="shot">3</span></p>
+    </div>
+
+    <div>
+        <table class="table_sort">
+            <thead >
+                <tr>
+                    <th>Артикул</th>
+                    <th>Автор</th>
+                    <th>Название</th>
+                    <th>Описание</th>
+                </tr>
+            </thead>
+            <tbody id="books">
+                <tr>
+                    <th class="hide">Артикул</th>
+                    <th class="hide">Автор</th>
+                    <th class="hide">Название</th>
+                    <th class="hide">Описание</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="lib/jasmine-3.5.0/jasmine.js"></script>
+    <script src="lib/jasmine-3.5.0/jasmine-html.js"></script>
+    <script src="lib/jasmine-3.5.0/boot.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/test.js"></script>
+</body>
+
+</html>
