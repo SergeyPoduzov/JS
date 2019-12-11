@@ -1,0 +1,173 @@
+body {
+  margin: 0 auto;
+  padding: 1em;
+  text-align: center;
+  font: normal 16px/1.5 Helvetica, sans-serif;
+  background: linear-gradient(to right, #F0ED79 0%, #FF6AA9 100%);
+}
+
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box__item {
+  display: inline;
+  font-weight: bold;
+  font-size: 2em;
+  border: .1em solid rgb(192, 156, 221);
+  border-radius: 2em;
+  padding: .5em;
+  color: blueviolet;
+  background-color: #D4CFFF;
+}
+
+.green {
+  background-color: #B0FFB4;
+}
+
+#btnCount {
+  height: 3em;
+  width: 5em; 
+  border-radius: 1em;
+  margin: 1em auto;
+  padding: 0;
+  line-height: 3em;
+  background-color: #B0F2FF;
+  cursor: pointer;
+}
+
+#btnCount:hover {
+  box-shadow: 0 0 0 .2em #B0F2FF inset, 0 0 0 .4em white inset;
+}
+
+.brightness {
+  filter: brightness(65%);
+}
+
+/* ======================================================================== */
+
+.page {
+  margin: 50px 0;
+}
+
+#commentArea {
+  width: 20em;
+  height: 10em;
+  border-radius: .3em;
+}
+
+#commentList {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+#sendButton {
+  border-radius: .2em;
+}
+
+td, th {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+
+
+
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.tabsContainer {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 25px;
+}
+
+.tabs {
+  display: flex;
+}
+
+.tabs li:not(:last-child) {
+  margin-right: 7px;
+}
+
+.tabs li a{
+  display: block;
+  position: relative;
+  top: 4px;
+  padding: 10px 25px;
+  border-radius: .1em;
+  background: white;
+  opacity: 0.7;
+  transition: all 0.1s ease-in-out;
+}
+
+.tabs li.active a,
+.tabs li a:hover {
+  opacity: 1;
+  top: 0;
+}
+
+.tabsContent {
+  position: relative;
+  z-index: 2;
+  padding: 25px;
+  border-radius: 1em;
+  background: white;
+}
+
+.tabsPanel {
+  display: none;
+}
+
+.tabsPanel.active {
+  display: block;
+}
+
+.tabsPanel p + div {
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .tabs {
+    flex-direction: column;
+  }
+
+  .tabs li {
+    width: 100%;
+  }
+
+  .tabs li:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .tabs li a {
+    border-radius: 0;
+    opacity: 1;
+    top: 0;
+  }
+
+  .tabs li.active a::before {
+    content: "•";
+    padding-right: 5px;
+  }
+
+  .tabsContent {
+    border-radius: .1em;
+  }
+}
